@@ -97,9 +97,13 @@ The residual coding modules trained with the settings presented in [1] are inclu
 The test dataset can be downloaded from the following **FTP** by using dedicated FTP clients, such as FileZilla or FireFTP (we recommend to use [FileZilla](https://filezilla-project.org/)):
 
 Protocol: FTP
+
 FTP address: tremplin.epfl.ch
+
 Username: datasets@mmspgdata.epfl.ch
+
 Password: ohsh9jah4T
+
 FTP port: 21
 
 After you connect, choose the **learned_residual_pcc_test_set** folder from the remote site, and download the relevant material. The total size of the provided data is ~262 MB. 
