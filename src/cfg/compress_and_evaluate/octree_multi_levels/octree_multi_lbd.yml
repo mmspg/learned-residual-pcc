@@ -1,0 +1,10 @@
+---
+ command: "multi_config" 
+
+ yml_files: 
+  - "cfg/compress_and_evaluate/octree_multi_levels/octree_r1_lbd_10.yml"
+  - "cfg/compress_and_evaluate/octree_multi_levels/octree_r1_lbd_25.yml"
+  - "cfg/compress_and_evaluate/octree_multi_levels/octree_r1_lbd_50.yml"
+  - "cfg/compress_and_evaluate/octree_multi_levels/octree_r2_lbd_10.yml"
+  - "cfg/compress_and_evaluate/octree_multi_levels/octree_r2_lbd_25.yml"
+  - "cfg/compress_and_evaluate/octree_multi_levels/octree_r2_lbd_50.yml"

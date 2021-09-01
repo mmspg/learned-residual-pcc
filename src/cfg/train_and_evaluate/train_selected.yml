@@ -1,0 +1,10 @@
+---
+ command: "multi_config" 
+
+ yml_files: 
+  - "cfg/train_and_evaluate/octree_multi_levels/octree_r1_lbd_10.yml"
+  - "cfg/train_and_evaluate/octree_multi_levels/octree_r2_lbd_50.yml"  
+  - "cfg/train_and_evaluate/trisoup_multi_levels/trisoup_r1_lbd_5.yml"
+  - "cfg/train_and_evaluate/trisoup_multi_levels/trisoup_r2_lbd_10.yml"
+  - "cfg/train_and_evaluate/trisoup_multi_levels/trisoup_r3_lbd_25.yml"
+

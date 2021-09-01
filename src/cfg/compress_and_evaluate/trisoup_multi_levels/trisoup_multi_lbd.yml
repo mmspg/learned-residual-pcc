@@ -1,0 +1,18 @@
+---
+ command: "multi_config" 
+
+ yml_files: 
+  - "cfg/compress_and_evaluate/trisoup_multi_levels/trisoup_r1_lbd_5.yml"  
+  - "cfg/compress_and_evaluate/trisoup_multi_levels/trisoup_r1_lbd_10.yml"
+  - "cfg/compress_and_evaluate/trisoup_multi_levels/trisoup_r1_lbd_25.yml"  
+  - "cfg/compress_and_evaluate/trisoup_multi_levels/trisoup_r1_lbd_50.yml"  
+  - "cfg/compress_and_evaluate/trisoup_multi_levels/trisoup_r1_lbd_100.yml"
+  - "cfg/compress_and_evaluate/trisoup_multi_levels/trisoup_r2_lbd_10.yml"
+  - "cfg/compress_and_evaluate/trisoup_multi_levels/trisoup_r2_lbd_25.yml"  
+  - "cfg/compress_and_evaluate/trisoup_multi_levels/trisoup_r2_lbd_50.yml"  
+  - "cfg/compress_and_evaluate/trisoup_multi_levels/trisoup_r2_lbd_100.yml"
+  - "cfg/compress_and_evaluate/trisoup_multi_levels/trisoup_r3_lbd_10.yml"
+  - "cfg/compress_and_evaluate/trisoup_multi_levels/trisoup_r3_lbd_25.yml"  
+  - "cfg/compress_and_evaluate/trisoup_multi_levels/trisoup_r3_lbd_50.yml"  
+  - "cfg/compress_and_evaluate/trisoup_multi_levels/trisoup_r3_lbd_100.yml"
+

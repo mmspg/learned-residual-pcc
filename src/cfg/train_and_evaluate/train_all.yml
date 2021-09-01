@@ -1,0 +1,7 @@
+---
+ command: "multi_config" 
+
+ yml_files: 
+  - "cfg/train_and_evaluate/octree_multi_levels/octree_multi_lbd.yml"
+  - "cfg/train_and_evaluate/trisoup_multi_levels/trisoup_multi_lbd.yml"
+

@@ -1,0 +1,102 @@
+---
+#Command to be executed
+ command: "train_and_evaluate"
+
+#Block size of training and validation set
+ block_size_train: 32
+#Block size of test set
+ block_size_test: 64
+
+#Parameters for train
+ epochs: 30
+ steps_per_epoch: 1000
+ learning_rate: 0.0001
+
+#Patttern for reference point cloud blocks of training set
+ train_set_ref_glob: "../dataset/train/blocks_32/train_blocks_32_original/*.ply"
+#Patttern for distorted point cloud blocks of training set 
+ train_set_dist_glob: "../dataset/train/blocks_32/train_blocks_32_trisoup-predlift_r02/*.ply"
+ 
+#Size of training set
+ train_size: 10000
+#Size of validation set
+ val_size: 512
+#Batch size for training
+ batch_size_train: 32
+ preprocess_threads: 4
+ 
+#Hyperparameters for model
+ lambda: 50
+ gamma: 2
+ alpha: 0.9
+
+ num_scales: 64 
+ scale_min: .11 
+ scale_max: 256. 
+
+#Number of filters of (hyper)synthesis and (hyper)analysis 
+ num_filters: 32
+#Number of channels of synthesis output
+ num_channels_residual: 32
+
+#Number of filters of refiner
+ num_filters_refiner: 32
+#Number of layers of refiner
+ num_layers_refiner: 7
+#Kernel size for each layer of the refiner
+ kernel_size_refiner: [5, 5, 5, 5, 5, 5, 5, 5]
+
+ 
+#Number of bytes used to encode length in the bitstream (per block, one for main bitstream and other for hyperprior)
+ bytes_length: 2
+
+#Batch size used for compressing and decompressing test set
+ batch_size_test: 8
+
+#Pattern for reference point cloud blocks of test set
+ ref_pc_glob: "../dataset/test/blocks_64/test_blocks_64_original/*.ply"
+#Pattern for distorted point cloud blocks of test set
+ dist_pc_glob: "../dataset/test/blocks_64/test_blocks_64_trisoup-predflit_r02/*.ply"
+
+#When set to True, compression is done without using GPU
+ force_cpu: False
+ 
+#Directory with uncompressed point clouds from test set
+ ori_dir: "../dataset/test/models/test_models_original"
+#Directory with uncompressed point clouds from test set with normal vectors
+ nor_dir: "../dataset/test/models/test_models_original_nor"
+#Pattern for point clouds of test set distorted with base layer encoding
+ dist_pc_models_glob: "../dataset/test/models/test_models_trisoup-predlift_r02/*.ply"
+
+
+#Path to file with bit-rate values for each point cloud of test set
+ bin_csv_file: "../dataset/test_models-bin_bitrates.csv"
+#Path to executable binary of tool that computes objective metrics
+ pc_error: "../tools/pc_error_d"
+
+#Name of file where computed metrics and bit-rates will be registered
+ eval_csv_file: "eval_blocks_64.csv"
+
+#When set to True, the generated outputs are all saved in a same directory
+ auto_paths: True
+
+#All the following configurations are only used when auto_paths is set to True
+
+#When set to True, the root directory is named after this yml file name
+ use_cfg_filename_as_modelname: True
+#Root directory to save all generated output from all models
+ output_root: "../output"
+#Directory for saving checkpoints
+ checkpoint_rel_dir: "checkpoint"
+#Directory for saving the model after the training is completed
+ model_rel_dir: "model"
+#Directory for saving the compressed binaries of each block from the test set 
+ div_bin_rel_dir: "blocks_64/bin"
+#Directory for saving the decompressed point cloud blocks from the test set
+ div_dec_rel_dir: "blocks_64/dec"
+#Directory for saving the merged binaries for the point clouds from the test set
+ merged_bin_rel_dir: "merged/bin_blocks_64"
+#Directory for saving the merged decompressed point clouds from the test set 
+ merged_dec_rel_dir: "merged/dec_blocks_64"
+
+
