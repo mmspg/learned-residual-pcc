@@ -113,16 +113,14 @@ Please read the README files for further information on the structure and the us
 This repository is licensed under the GPL-3.0 License. However, some files of the source code were adapted from two other repositories and are therefore licensed with the same license as the adapted code. The repositories, their respective licenses and related source code files are listed below:
 
 * Name: Learning Convolutional Transforms for Point Cloud Geometry Compression
-* License: MIT License
-* License file: LICENSE-a
-* Related files: dataset.py, focal_loss.py, pc_io.py
-
-
+  * License: MIT License
+  * License file: LICENSE-a
+  * Related files: dataset.py, focal_loss.py, pc_io.py
 
 * Name: TensorFlow Compression
-* License: Apache-2.0
-* License file: LICENSE-b
-* Related files: compression_model.py, train.py
+  * License: Apache-2.0
+  * License file: LICENSE-b
+  * Related files: compression_model.py, train.py
 
 ## Conditions of use
 
